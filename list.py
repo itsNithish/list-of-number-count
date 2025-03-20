@@ -1,11 +1,5 @@
-numbers = [1,1,1,1,1,6,2,2,2,3,3,3,4,4,5]
-
-count_of_numbers = {}
-
-
+numbers = [1,1,2,2,2,3,3,3,3,4,4,4,4,]
+count_of_number = {}
 for i in numbers:
-    if i in count_of_numbers:
-       count_of_numbers[i]+=1
-    else:
-       count_of_numbers[i]=1
-print(count_of_numbers)
+    count_of_number[i]=count_of_number.get(i,0)+1
+print (count_of_number)
